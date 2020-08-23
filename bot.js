@@ -32,7 +32,7 @@ bot.on("message", async message => { //This is where it begins to load in comman
 		message.delete();
 	}
 	
-	if (!message.content.startsWith(botconfig.prefix) || message.author.bot) //Filters to make sure the bot isn't running the commands.
+	if (!message.content.startsWith("?") || message.author.bot) //Filters to make sure the bot isn't running the commands.
 		return;
 	if (message.channel.type === "dm") return; //Filters to make sure the command isn't run in a DM.
 
