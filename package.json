@@ -1,12 +1,26 @@
+
 {
-  "name": "SpotBotV4",
-  "version": "1.0.0",
-  "description": "",
+
+  "name": "Example",
+
+  "description": "Example",
+
+  "version": "0.0.0",
+
   "main": "bot.js",
+
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+
+    "start": "node bot.js"
+
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+
+  "dependencies": {
+
+    "discord.js": "12.3.1",
+
+    "request": "2.81.0"
+
+  }
+
 }
