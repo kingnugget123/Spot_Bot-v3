@@ -26,6 +26,7 @@ bot.on("ready", async () => { //Logs when your bot is online.
 
 bot.on("message", async message => { //This is where it begins to load in commands.
 
+        if (message.channel.type === "dm") return; //Filters to make sure the command isn't run in a DM.
 	
 	if(message.content.includes("discord.gg/") | message.content.includes("discordapp.com/invite/")) {
 		message.reply("No posting server links, i'm one step ahead of you :)");
@@ -34,7 +35,6 @@ bot.on("message", async message => { //This is where it begins to load in comman
 	
 	if (!message.content.startsWith("?") || message.author.bot) //Filters to make sure the bot isn't running the commands.
 		return;
-	if (message.channel.type === "dm") return; //Filters to make sure the command isn't run in a DM.
 
 	let prefix = '?'; //Specifies the prefix from a botconfig.json file. You can also do: let prefix = "?";
 	let messageArray = message.content.split(" "); //Splits the command from any other arguments.
