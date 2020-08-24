@@ -28,8 +28,9 @@ module.exports.run = async (bot, message, args) => {
     .setColor(1752220);
 
     const SentPost = new Discord.MessageEmbed()
-    .setTitle("Successfully sent your advertisement for moderation.");
-
+    .setTitle("Successfully sent your advertisement for moderation.")
+    .setColor(1752220);
+    
     const WrongCategory = new Discord.MessageEmbed()
     .setTitle("Did not input a correct category, please re-run the command and try again.")
     .setColor(1752220);
