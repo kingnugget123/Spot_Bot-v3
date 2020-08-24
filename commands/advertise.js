@@ -224,7 +224,7 @@ module.exports.run = async (bot, message, args) => {
                 .addField("Cost:", cost)
                 .addField("Description:", desc)
                 .addField("Link:", `[${title.toString()}](${link.toString()})`)
-                .addField("Posted By:", `<@${collectedMessage.author.id}>`)
+                .addField("Posted By:", `<:discordlogo:747205412922720296> - <@${collectedMessage.author.id}>`)
                 .setColor(1752220)
                 .setFooter(`category: ${category}`);
                 
