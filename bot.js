@@ -21,7 +21,7 @@ fs.readdir("./commands/", (err, files) => { //Finds the commands folder.
 
 bot.on("ready", async () => { //Logs when your bot is online.
 	console.log(`${bot.user.username} is online!`);
-	bot.user.setActivity("INDIE GAME SPOTLIGHT", { type: "PLAYING" }); //Optional
+	bot.user.setActivity("?advertise", { type: "PLAYING" }); //Optional
 });
 
 bot.on("message", async message => { //This is where it begins to load in commands.
